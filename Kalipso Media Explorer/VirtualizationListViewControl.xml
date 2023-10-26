@@ -1,0 +1,1628 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VirtualizationListViewControl</name>
+    </assembly>
+    <members>
+        <member name="T:VirtualizationListViewControl.Controls.ExpressionValueLeafContentControl">
+            <summary>
+            ContentControl substituting their ContentTemplate dependence on selected expression argument
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.ExpressionValueLeafContentControl.AvailableFilterableProperties">
+            <summary>
+            Dependency property for available filterable properties at ExpressionValueLeafContentControl
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.ExpressionValueLeafContentControl.SelectedComparisonFieldLeaf">
+            <summary>
+            Dependency property for selected conparison argument at ExpressionValueLeafContentControl
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.Controls.FilterConfigurator">
+            <summary>
+            Filter configurator window
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Controls.FilterConfigurator.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes call System.Windows.FrameworkElement.ApplyTemplate().
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.Filters">
+            <summary>
+            Dependency property for filters list at FilterConfigurator
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.SelectedFilterConfiguration">
+            <summary>
+            Dependency property for associating selected filter to FilterConfigurator
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.FilterableArguments">
+            <summary>
+            Dependency property for filterable arguments at FilterConfigurator
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.SelectedFilterableArgument">
+            <summary>
+            Dependency property for selected filterable argument at FilterConfigurator
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.IsAddingNewFilter">
+            <summary>
+            Dependency property for indicating adding new filter at FilterConfigurator
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.NewFilterName">
+            <summary>
+            Dependency property for new filter name at FilterConfigurator
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.SelectedExpression">
+            <summary>
+            Dependency property for selected filter expression at FilterConfigurator
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.AvailableComparisonOperators">
+            <summary>
+            Dependency property for  available comparison operators at FilterConfigurator
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.SelectedComparisonOperator">
+            <summary>
+            Dependency property for selected comparison operator at FilterConfigurator
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.FilterValidationError">
+            <summary>
+            Dependency property for filter validation error text at FilterConfigurator
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.FinishFiltersConfigurateCommand">
+            <summary>
+            Finish filters configurate command. 
+            Save configurate filters and close filter configurator.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.AddNewFilterCommand">
+            <summary>
+            Add new filter command
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.CancelAddingNewFilterCommand">
+            <summary>
+            Cancel adding new filter command
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.RemoveFilterCommand">
+            <summary>
+            Remove filter command
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.AddOperandCommand">
+            <summary>
+            Add operand to expression command
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.AddNodeCommand">
+            <summary>
+            Add logical operator node to expression command
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.RemoveOperandCommand">
+            <summary>
+            Remove operand from expression command
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.FilterConfigurator.ClearExpressionCommand">
+            <summary>
+            Clear expression command
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.Controls.ValueViewContentControl">
+            <summary>
+            ContentControl substituting their ContentTemplate dependence on value of expression argument
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.ValueViewContentControl.AvailableFilterableProperties">
+            <summary>
+            Dependency property for available filterable properties at ExpressionValueLeafContentControl
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.ValueViewContentControl.SelectedComparisonFieldLeaf">
+            <summary>
+            Dependency property for selected comparison argument at ExpressionValueLeafContentControl
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.VirtualizationListView.IsListViewInitialized">
+            <summary>
+            Indicate when ListView initialized
+            </summary>
+        </member>
+        <member name="E:VirtualizationListViewControl.Controls.VirtualizationListView.SelectionChanged">
+            <summary>
+            Selection item changed event
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Controls.VirtualizationListView.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes call System.Windows.FrameworkElement.ApplyTemplate().
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.VirtualizationListView.Localization">
+            <summary>
+            Dependency property for anchor localization at VirtualizationListView
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.VirtualizationListView.ItemsSource">
+            <summary>
+            Dependency property for anchor items source to VirtualizationListView
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.VirtualizationListView.Columns">
+            <summary>
+            Dependency property for anchor columns to VirtualizationListView
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.VirtualizationListView.SelectedItem">
+            <summary>
+            Dependency property for anchor selected item at VirtualizationListView
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.VirtualizationListView.HasFilter">
+            <summary>
+            Dependency property for indicating availability filtration at VirtualizationListView (readonly)
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.VirtualizationListView.AvailableFilterableProperties">
+            <summary>
+            Dependency property for anchor available filterable properties at VirtualizationListView
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.VirtualizationListView.Filters">
+            <summary>
+            Dependency property for filters list at VirtualizationListView
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.VirtualizationListView.SelectedFilter">
+            <summary>
+            Dependency property for anchor selected filter at VirtualizationListView
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.VirtualizationListView.IsDefaultFilter">
+            <summary>
+            Dependency property for indicating selected default filter at VirtualizationListView
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Controls.VirtualizationListView.EditQueriesCommand">
+            <summary>
+            Show filter configurator command
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Controls.VirtualizationListView.VirtualizationListView_OnKeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Key down actions
+            </summary>
+            <param name="sender"></param>
+            <param name="keyEventArgs"></param>
+        </member>
+        <member name="E:VirtualizationListViewControl.Controls.VirtualizationListView.ClearFastFilterRow">
+            <summary>
+            Clear fast filter row event
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Controls.VirtualizationListView.OnClearFastFilterRow(System.Nullable{VirtualizationListView.SortAndFilterDTO.FieldDescription})">
+            <summary>
+            Rise clear fast filter row handler
+            </summary>
+            <param name="notClearProperty">Property which not clear fast filter row</param>
+        </member>
+        <member name="F:VirtualizationListViewControl.Controls.VirtualizationListView._filterByValueTokenSource">
+            <summary>
+            Cancel fast filter operation
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Controls.VirtualizationListView.FilterByValue(VirtualizationListView.SortAndFilterDTO.FieldDescription,System.Object,VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.Operators.ComparisonOperators)">
+            <summary>
+            Filter by value from fast filter row
+            </summary>
+            <param name="property">Filter property</param>
+            <param name="value">Filter field value</param>
+            <param name="filterOperator">Filter operator</param>
+        </member>
+        <member name="F:VirtualizationListViewControl.Controls.VirtualizationListView.IsSetFilterByValue">
+            <summary>
+            Indicate when set filter by value
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Controls.VirtualizationListView.FilterByValueAsync(System.Threading.CancellationToken,VirtualizationListView.SortAndFilterDTO.FieldDescription,System.Object,VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.Operators.ComparisonOperators)">
+            <summary>
+            Async filter by value from fast filter row
+            </summary>
+            <param name="cancellationToken">Cancel fast filter operation</param>
+            <param name="property">Filter property</param>
+            <param name="value">Filter field value</param>
+            <param name="filterOperator">Filter operator</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Converters.BooleanAndNullToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:VirtualizationListViewControl.Converters.BooleanAndNullToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:VirtualizationListViewControl.Converters.FilterConditionToStringMultiConverter.GetStringFilteringConditions(VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement,VirtualizationListViewControl.SlaveTypes.FilterablePropertyDescriptionCollection)">
+            <summary>
+            Получить строковое выражение фильтрации
+            </summary>
+            <param name="filterElement">Параметры фильтра</param>
+            <param name="filterablePropertyDescription">Описание свойств фильтрации</param>
+            <returns>Строковое выражение фильтрации</returns>
+        </member>
+        <member name="T:VirtualizationListViewControl.Converters.ValidationErrorToResponseConverter">
+            <summary>
+            Convert validation error content to specify ValidationResponce
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.Collection.DataPage`1">
+            <summary>
+            Definition page with data items
+            </summary>
+            <typeparam name="T">Data item object</typeparam>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.DataPage`1.Items">
+            <summary>
+            Page's data items
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.DataPage`1.TouchTime">
+            <summary>
+            Time when page touched
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.DataPage`1.IsInUse">
+            <summary>
+            Indicate when page now in view state
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.DataPage`1.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructor with inizialise new items
+            </summary>
+            <param name="firstIndex">Index of first item in page</param>
+            <param name="pageLength">Count items in page</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.DataPage`1.Populate(System.Collections.Generic.IList{`0})">
+            <summary>
+            Inizialise page items
+            </summary>
+            <param name="newItems">Items with data</param>
+        </member>
+        <member name="T:VirtualizationListViewControl.Collection.DataWrapper`1">
+            <summary>
+            Data item wrapper
+            </summary>
+            <typeparam name="T">Data item object</typeparam>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.DataWrapper`1.Data">
+            <summary>
+            Item data
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.DataWrapper`1.Index">
+            <summary>
+            Item index in list
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.DataWrapper`1.IsLoading">
+            <summary>
+            Indicate when item data loading
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.DataWrapper`1.IsInUse">
+            <summary>
+            Indicate when item now in view state
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.DataWrapper`1.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.DataWrapper`1.#ctor(System.Int32)">
+            <summary>
+            Constructor with item index
+            </summary>
+            <param name="index">Item index in list</param>
+        </member>
+        <member name="T:VirtualizationListViewControl.Collection.VirtualizingCollection`1">
+            <summary>
+            Special implementation of IList for data virtualization. Collection split by pages which dynamic provided by 
+            ItemsProvider corrective maintenance. Oldest pages delete on discharge target time.
+            </summary>
+            <typeparam name="T">Data item object</typeparam>
+        </member>
+        <member name="F:VirtualizationListViewControl.Collection.VirtualizingCollection`1.DefaultPageSize">
+            <summary>
+            Default page size
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.Collection.VirtualizingCollection`1.DefaultPageTimeout">
+            <summary>
+            Default page timeout for delete page
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.#ctor(VirtualizationListViewControl.Interfaces.IItemsProvider{`0},System.Int32,System.Int64)">
+            <summary>
+            Constructor with items provider, page size and her timeout
+            </summary>
+            <param name="itemsProvider">Data items provider</param>
+            <param name="pageSize">Page size for loading items</param>
+            <param name="pageTimeout">Page timeout for delete page</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.#ctor(VirtualizationListViewControl.Interfaces.IItemsProvider{`0},System.Int32)">
+            <summary>
+            Constructor with items provider and page size
+            </summary>
+            <param name="itemsProvider">Data items provider</param>
+            <param name="pageSize">Page size for loading items</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.#ctor(VirtualizationListViewControl.Interfaces.IItemsProvider{`0})">
+            <summary>
+            Constructor with items provider
+            </summary>
+            <param name="itemsProvider">Data items provider</param>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.VirtualizingCollection`1.ItemsProvider">
+            <summary>
+            Data items provider
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.Collection.VirtualizingCollection`1._pages">
+            <summary>
+            Data items pages which view now
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.Collection.VirtualizingCollection`1.Timer">
+            <summary>
+            Timer periodic delete unused pages
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.CleanUpPages">
+            <summary>
+            Delete unused pages
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.CleanUpPagesOnTimerTick(System.Object,System.EventArgs)">
+            <summary>
+            Rise CleanUpPages method when timer work
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.PopulatePage(System.Int32,System.Collections.Generic.IList{`0})">
+            <summary>
+            Inizialise page in dictionary
+            </summary>
+            <param name="pageIndex">Page index</param>
+            <param name="dataItems">Page data items</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.RequestPage(System.Int32)">
+            <summary>
+            Request specified page. Create default items for her and update last touch time.
+            </summary>
+            <param name="pageIndex">Page index</param>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.VirtualizingCollection`1.PageSize">
+            <summary>
+            One page size for loading items
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.VirtualizingCollection`1.PageTimeout">
+            <summary>
+            Page timeout for delete page if her long ago not touched
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.Dispose">
+            <summary>
+            Dispose using resources
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.VirtualizingCollection`1.Count">
+            <summary>
+            Get total items count in list. 
+            In first time request count in ItemsProvider.
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.Collection.VirtualizingCollection`1._accumulatedCountLock">
+            <summary>
+            Lock object for AccumulatedCount property
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.Collection.VirtualizingCollection`1._accumulatedCountLockSlimTimeOut">
+            <summary>
+            Lock timeout for AccumulatedCount property
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.VirtualizingCollection`1.AccumulatedCount">
+            <summary>
+            Accumulated items count in list (without indexer)
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.VirtualizingCollection`1.Item(System.Int32)">
+            <summary>
+            Indexer. Get specify item by index. 
+            If necessary request page in ItemsProvider.
+            </summary>
+            <param name="index">Specify item index</param>
+            <returns>Specify item by index</returns>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.VirtualizingCollection`1.System#Collections#IList#Item(System.Int32)">
+            <summary>
+            Indexer. Get specify item by index. 
+            If necessary request page in ItemsProvider.
+            </summary>
+            <param name="index">Specify item index</param>
+            <returns>Specify item by index</returns>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.GetEnumerator">
+            <summary>
+            Get specify enumerator for only accumulated collection items
+            </summary>
+            <returns>Enumerator for collection items</returns>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Get enumerator for collection items
+            </summary>
+            <returns>Enumerator for collection items</returns>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.System#Collections#IList#Contains(System.Object)">
+            <summary>
+            Contains item in list
+            </summary>
+            <param name="value">Finding intem</param>
+            <returns>true - contains item in list, otherwise - false</returns>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.Contains(VirtualizationListViewControl.Collection.DataWrapper{`0})">
+            <summary>
+            Contains item in only acumulated pages
+            </summary>
+            <param name="item">Finding intem</param>
+            <returns>true - contains item in list, otherwise - false</returns>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.System#Collections#IList#IndexOf(System.Object)">
+            <summary>
+            Get item index
+            </summary>
+            <param name="value">Item for which finding index</param>
+            <returns>Item index</returns>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.IndexOf(VirtualizationListViewControl.Collection.DataWrapper{`0})">
+            <summary>
+            Get item index in accumulated pages
+            </summary>
+            <param name="item">Item for which finding index</param>
+            <returns>Item index</returns>
+        </member>
+        <member name="E:VirtualizationListViewControl.Collection.VirtualizingCollection`1.CollectionChanged">
+            <summary>
+            Collection changed event
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.OnCollectionChanged(System.Collections.Generic.List{System.Collections.Specialized.NotifyCollectionChangedEventArgs})">
+            <summary>
+            Rise collection changed handler
+            </summary>
+            <param name="e">Collection changed information</param>
+        </member>
+        <member name="E:VirtualizationListViewControl.Collection.VirtualizingCollection`1.PropertyChanged">
+            <summary>
+            Property changed event
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Rise property changed handler
+            </summary>
+            <param name="e">Property changed information</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.FirePropertyChanged(System.String)">
+            <summary>
+            Rise async property changed handler
+            </summary>
+            <param name="propertyName">Property changed information</param>
+        </member>
+        <member name="E:VirtualizationListViewControl.Collection.VirtualizingCollection`1.ClearSelection">
+            <summary>
+            Clear selection event. 
+            Parameter indicate if full clear (non-reset selection)
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.OnClearSelection(System.Boolean)">
+            <summary>
+            Rise clear selection handler
+            </summary>
+            <param name="isFullClear">Indicate if full clear (non-reset selection)</param>
+        </member>
+        <member name="E:VirtualizationListViewControl.Collection.VirtualizingCollection`1.ResetSelection">
+            <summary>
+            Recovery selection event
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.OnResetSelection">
+            <summary>
+            Rise recovery selection handler
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.Collection.VirtualizingCollection`1._selectedItemLock">
+            <summary>
+            Lock object for SelectedItem and SelectedIndex properties
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.Collection.VirtualizingCollection`1._selectedItemLockTimeOut">
+            <summary>
+            Lock timeout for SelectedItem and SelectedIndex properties
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.VirtualizingCollection`1.SelectedItem">
+            <summary>
+            Selected item
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.VirtualizingCollection`1.SelectedIndex">
+            <summary>
+            Index of selected item
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.PreviousSelected">
+            <summary>
+            Select previous item
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.NextSelected">
+            <summary>
+            Select next item
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.VirtualizingCollection`1.IsSelectedItemVisible">
+            <summary>
+            Indicate when selected item retrieve in view area
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.SubscribeToItemsProviderEvents">
+            <summary>
+            Subscribe to items provider changes events
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.UnsubscribeFromItemsProviderEvents">
+            <summary>
+            Unsubscribe to items provider changes events
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.AddItem(System.Int32,`0)">
+            <summary>
+            Adding item in list handler
+            </summary>
+            <param name="index">Index of adding item</param>
+            <param name="newItem">New item</param>
+            <returns>Adding information for notify collection changed event</returns>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.ChangeItem(System.Int32,`0)">
+            <summary>
+            Changing item in list handler
+            </summary>
+            <param name="index">Index of chenging item</param>
+            <param name="newState">Changed item</param>
+            <returns>Changing information for notify collection changed event</returns>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.RemoveItem(System.Int32,`0)">
+            <summary>
+            Removing item from list handler
+            </summary>
+            <param name="index">Index of removing item</param>
+            <param name="removedItem">Removed item</param>
+            <returns>Removing information for notify collection changed event</returns>
+        </member>
+        <member name="F:VirtualizationListViewControl.Collection.VirtualizingCollection`1.ListEventsHandlerActionBlock">
+            <summary>
+            List changes handler block
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.OnListUpdates(System.Collections.Generic.List{VirtualizationListViewControl.ServerListChangesCallBack.ServerListChanging{`0}})">
+            <summary>
+            Add list changes to handler block
+            </summary>
+            <param name="serverListChangings">List changes</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.ListChangesHandler(System.Collections.Generic.List{VirtualizationListViewControl.ServerListChangesCallBack.ServerListChanging{`0}})">
+            <summary>
+            List changes handler
+            </summary>
+            <param name="serverListChangings">List changes</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.VerifyUnloadedPages">
+            <summary>
+            Check unloaded data items at pages and load theirs
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.ClearList">
+            <summary>
+            Reload all pages in collection
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.VirtualizingCollection`1.IsPageLoading">
+            <summary>
+            Indicate when page loading
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.Collection.VirtualizingCollection`1._pageLoadingLock">
+            <summary>
+            Lock object for page loading indicator
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.Collection.VirtualizingCollection`1._pageLoadingLockTimeOut">
+            <summary>
+            Lock timeout for page loading indicator
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.FetchPageCommand(System.Int32,System.Int32)">
+            <summary>
+            Request page with data items from ItemsProvider
+            </summary>
+            <param name="pageIndex">Page index</param>
+            <param name="pageLength">Items count in page</param>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.VirtualizingCollection`1.CurrentSortParams">
+            <summary>
+            Current sorting parameters
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.Sort(VirtualizationListView.SortAndFilterDTO.Sorting.SortParams)">
+            <summary>
+            Sort list
+            </summary>
+            <param name="sorterParams">Sorting parameters</param>
+        </member>
+        <member name="E:VirtualizationListViewControl.Collection.VirtualizingCollection`1.FilterChanged">
+            <summary>
+            Filter changed event
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.OnFilterChanged">
+            <summary>
+            Rise filter changed handler
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.Filter(VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams)">
+            <summary>
+            Filter list
+            </summary>
+            <param name="filterParams">Filtering parameters</param>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.VirtualizingCollection`1.CurrentFilterParams">
+            <summary>
+            Current filtering parameters
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Collection.VirtualizingCollection`1.AllFilters">
+            <summary>
+            Available filters list
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.AddNewFilter(VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams)">
+            <summary>
+            Add new filter
+            </summary>
+            <param name="newFilterParams">New filter parameters</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.UpdateFilter(VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams)">
+            <summary>
+            Update filter parameters
+            </summary>
+            <param name="updatedFilterParams">Updated filter parameters</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.UpdateFilters(System.Collections.Generic.List{VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams})">
+            <summary>
+            Update some filters parameters
+            </summary>
+            <param name="updatedFiltersParams">Updated filters parameters</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.RemoveFilter(System.String)">
+            <summary>
+            Remove filter
+            </summary>
+            <param name="filterName">FIlter name</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Collection.VirtualizingCollection`1.GetExpressionAvailableValues(VirtualizationListView.SortAndFilterDTO.FieldDescription)">
+            <summary>
+            Get available values for expression field
+            </summary>
+            <param name="field">Expression field</param>
+            <returns>Available values</returns>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.BindableSelectedItemHelper.GetTreeViewItem(System.Windows.Controls.ItemsControl,System.Object)">
+            <summary>
+            Recursively search for an item in this subtree.
+            </summary>
+            <param name="container">
+            The parent ItemsControl. This can be a TreeView or a TreeViewItem.
+            </param>
+            <param name="item">
+            The item to search for.
+            </param>
+            <returns>
+            The TreeViewItem that contains the specified item.
+            </returns>
+        </member>
+        <member name="T:VirtualizationListViewControl.Helpers.DelegateCommand">
+            <summary>
+                This class allows delegating the commanding logic to methods passed as parameters,
+                and enables a View to bind commands to objects that are not part of the element tree.
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DelegateCommand.#ctor(System.Action)">
+            <summary>
+                Constructor
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DelegateCommand.#ctor(System.Action,System.Func{System.Boolean})">
+            <summary>
+                Constructor
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DelegateCommand.#ctor(System.Action,System.Func{System.Boolean},System.Boolean)">
+            <summary>
+                Constructor
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DelegateCommand.CanExecute">
+            <summary>
+                Method to determine if the command can be executed
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DelegateCommand.Execute">
+            <summary>
+                Execution of the command
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Helpers.DelegateCommand.IsAutomaticRequeryDisabled">
+            <summary>
+                Property to enable or disable CommandManager's automatic requery on this command
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DelegateCommand.RaiseCanExecuteChanged">
+            <summary>
+                Raises the CanExecuteChaged event
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DelegateCommand.OnCanExecuteChanged">
+            <summary>
+                Protected virtual method to raise CanExecuteChanged event
+            </summary>
+        </member>
+        <member name="E:VirtualizationListViewControl.Helpers.DelegateCommand.CanExecuteChanged">
+            <summary>
+                ICommand.CanExecuteChanged implementation
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.Helpers.DelegateCommand`1">
+            <summary>
+                This class allows delegating the commanding logic to methods passed as parameters,
+                and enables a View to bind commands to objects that are not part of the element tree.
+            </summary>
+            <typeparam name="T">Type of the parameter passed to the delegates</typeparam>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DelegateCommand`1.#ctor(System.Action{`0})">
+            <summary>
+                Constructor
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DelegateCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean})">
+            <summary>
+                Constructor
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DelegateCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean},System.Boolean)">
+            <summary>
+                Constructor
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DelegateCommand`1.CanExecute(`0)">
+            <summary>
+                Method to determine if the command can be executed
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DelegateCommand`1.Execute(`0)">
+            <summary>
+                Execution of the command
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DelegateCommand`1.RaiseCanExecuteChanged">
+            <summary>
+                Raises the CanExecuteChaged event
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DelegateCommand`1.OnCanExecuteChanged">
+            <summary>
+                Protected virtual method to raise CanExecuteChanged event
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Helpers.DelegateCommand`1.IsAutomaticRequeryDisabled">
+            <summary>
+                Property to enable or disable CommandManager's automatic requery on this command
+            </summary>
+        </member>
+        <member name="E:VirtualizationListViewControl.Helpers.DelegateCommand`1.CanExecuteChanged">
+            <summary>
+                ICommand.CanExecuteChanged implementation
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.Helpers.CommandManagerHelper">
+            <summary>
+                This class contains methods for the CommandManager that help avoid memory leaks by
+                using weak references.
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.Helpers.DependencyObjectExtensions">
+            <summary>
+                Extension methods for the <see cref="T:System.Windows.DependencyObject" /> type.
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DependencyObjectExtensions.GetVisualDescendant``1(System.Windows.DependencyObject)">
+            <summary>
+                Gets the first child of the specified visual that is of tyoe <typeparamref name="T" />
+                in the visual tree recursively.
+            </summary>
+            <param name="visual">The visual to get the visual children for.</param>
+            <returns>
+                The first child of the specified visual that is of tyoe <typeparamref name="T" /> of the
+                specified visual in the visual tree recursively or <c>null</c> if none was found.
+            </returns>
+        </member>
+        <member name="M:VirtualizationListViewControl.Helpers.DependencyObjectExtensions.GetVisualDescendants(System.Windows.DependencyObject)">
+            <summary>
+                Gets all children of the specified visual in the visual tree recursively.
+            </summary>
+            <param name="visual">The visual to get the visual children for.</param>
+            <returns>All children of the specified visual in the visual tree recursively.</returns>
+        </member>
+        <member name="T:VirtualizationListViewControl.Interfaces.IFilterableCollection">
+            <summary>
+            Filter for collection interface
+            </summary>
+        </member>
+        <member name="E:VirtualizationListViewControl.Interfaces.IFilterableCollection.FilterChanged">
+            <summary>
+            Filter changed event
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.IFilterableCollection.Filter(VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams)">
+            <summary>
+            Filter list
+            </summary>
+            <param name="filterParams">Filtering parameters</param>
+        </member>
+        <member name="P:VirtualizationListViewControl.Interfaces.IFilterableCollection.CurrentFilterParams">
+            <summary>
+            Current filtering parameters
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Interfaces.IFilterableCollection.AllFilters">
+            <summary>
+            Available filters list
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.IFilterableCollection.AddNewFilter(VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams)">
+            <summary>
+            Add new filter
+            </summary>
+            <param name="newFilterParams">New filter parameters</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.IFilterableCollection.UpdateFilter(VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams)">
+            <summary>
+            Update filter parameters
+            </summary>
+            <param name="updatedFilterParams">Updated filter parameters</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.IFilterableCollection.UpdateFilters(System.Collections.Generic.List{VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams})">
+            <summary>
+            Update some filters parameters
+            </summary>
+            <param name="updatedFiltersParams">Updated filters parameters</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.IFilterableCollection.RemoveFilter(System.String)">
+            <summary>
+            Remove filter
+            </summary>
+            <param name="filterName">FIlter name</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.IFilterableCollection.GetExpressionAvailableValues(VirtualizationListView.SortAndFilterDTO.FieldDescription)">
+            <summary>
+            Get available values for expression field
+            </summary>
+            <param name="field">Expression field</param>
+            <returns>Available values</returns>
+        </member>
+        <member name="T:VirtualizationListViewControl.Interfaces.IFilterableItemsProvider">
+            <summary>
+            Filterable ItemsProvider interface
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.IFilterableItemsProvider.Filter(VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams,System.Int32)">
+            <summary>
+            Filter list on ItemsProvider
+            </summary>
+            <param name="filterParams">Filtering parameters</param>
+            <param name="pageSize">Page size for requesting</param>
+        </member>
+        <member name="P:VirtualizationListViewControl.Interfaces.IFilterableItemsProvider.LastFilterParams">
+            <summary>
+            Last selected filter
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Interfaces.IFilterableItemsProvider.AllFilters">
+            <summary>
+            Available filters
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.IFilterableItemsProvider.AddNewFilter(VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams)">
+            <summary>
+            Add new filter
+            </summary>
+            <param name="newFilterParams">Parameteter's new filter</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.IFilterableItemsProvider.UpdateFilter(VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams)">
+            <summary>
+            Update filter parameters
+            </summary>
+            <param name="updatedFilterParams">Updating parameters</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.IFilterableItemsProvider.RemoveFilter(System.String)">
+            <summary>
+            Remove filter from list
+            </summary>
+            <param name="filterName">Filter name</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.IFilterableItemsProvider.GetExpressionAvailableValues(VirtualizationListView.SortAndFilterDTO.FieldDescription)">
+            <summary>
+            Get available values for expression field
+            </summary>
+            <param name="field">Expression field</param>
+            <returns>Available values</returns>
+        </member>
+        <member name="T:VirtualizationListViewControl.Interfaces.ISelectionManager">
+            <summary>
+            Selection items at collection interface
+            </summary>
+        </member>
+        <member name="E:VirtualizationListViewControl.Interfaces.ISelectionManager.ClearSelection">
+            <summary>
+            Clear selection event. 
+            Parameter indicate if full clear (non-reset selection)
+            </summary>
+        </member>
+        <member name="E:VirtualizationListViewControl.Interfaces.ISelectionManager.ResetSelection">
+            <summary>
+            Recovery selection event
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Interfaces.ISelectionManager.SelectedItem">
+            <summary>
+            Selected item
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Interfaces.ISelectionManager.SelectedIndex">
+            <summary>
+            Index of selected item
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.ISelectionManager.PreviousSelected">
+            <summary>
+            Select previous item
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.ISelectionManager.NextSelected">
+            <summary>
+            Select next item
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.Interfaces.ISortableCollection">
+            <summary>
+            Sorting for collection interface
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.ISortableCollection.Sort(VirtualizationListView.SortAndFilterDTO.Sorting.SortParams)">
+            <summary>
+            Sort list
+            </summary>
+            <param name="sorterParams">Sorting parameters</param>
+        </member>
+        <member name="P:VirtualizationListViewControl.Interfaces.ISortableCollection.CurrentSortParams">
+            <summary>
+            Current sorting parameters
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.Interfaces.ISortableItemsProvider">
+            <summary>
+            Sortable ItemsProvider interface
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.ISortableItemsProvider.Sort(VirtualizationListView.SortAndFilterDTO.Sorting.SortParams,System.Int32)">
+            <summary>
+            Sort list on ItemsProvider
+            </summary>
+            <param name="sorterParams">Sorting parameters</param>
+            <param name="pageSize">Page size for requesting</param>
+        </member>
+        <member name="P:VirtualizationListViewControl.Interfaces.ISortableItemsProvider.LastSortParams">
+            <summary>
+            Last selected sorting
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.Interfaces.IServerListCallBackBehavior`1">
+            <summary>
+            ItemsProvider call back behavior interface
+            </summary>
+            <typeparam name="T">Data item object</typeparam>
+        </member>
+        <member name="E:VirtualizationListViewControl.Interfaces.IServerListCallBackBehavior`1.ListUpdates">
+            <summary>
+            List changed event
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.Interfaces.IItemsProvider`1">
+            <summary>
+            Items provider interface
+            </summary>
+            <typeparam name="T">Data item object</typeparam>
+        </member>
+        <member name="M:VirtualizationListViewControl.Interfaces.IItemsProvider`1.FetchRangeCommand(System.Int32,System.Int32)">
+            <summary>
+            Data items rage request
+            </summary>
+            <param name="startIndex">Start range index</param>
+            <param name="pageCount">Items count</param>
+        </member>
+        <member name="T:VirtualizationListViewControl.Localization.LocalizationDictionary">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.AddFilter">
+            <summary>
+              Looks up a localized string similar to Add filter.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.AddOperandToExpression">
+            <summary>
+              Looks up a localized string similar to Add argument to expression.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.AddOperator">
+            <summary>
+              Looks up a localized string similar to Add bracketed expression.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.And">
+            <summary>
+              Looks up a localized string similar to AND.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.AscendingSort">
+            <summary>
+              Looks up a localized string similar to Ascending sort.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.Cancel">
+            <summary>
+              Looks up a localized string similar to Cancel.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.ClearExpression">
+            <summary>
+              Looks up a localized string similar to Clear expression.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.ColumnWithoutSorting">
+            <summary>
+              Looks up a localized string similar to [Column not supported sorting].
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.CountTitle">
+            <summary>
+              Looks up a localized string similar to Count:.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.DefaultExpressionQueryText">
+            <summary>
+              Looks up a localized string similar to Choose filter and expression argument for adding.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.DefaultExpressionValueText">
+            <summary>
+              Looks up a localized string similar to Choose expression.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.DefaultFilterRowToolTip">
+            <summary>
+              Looks up a localized string similar to Field not supported filter by value.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.DescendingSort">
+            <summary>
+              Looks up a localized string similar to Descending sort.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.EditQueriesButtonText">
+            <summary>
+              Looks up a localized string similar to Editor.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.EditQueriesButtonToolTip">
+            <summary>
+              Looks up a localized string similar to Expression editor.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.Empty">
+            <summary>
+              Looks up a localized string similar to (empty).
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.Equal">
+            <summary>
+              Looks up a localized string similar to EQUAL.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.ExpressionArgumentsTitle">
+            <summary>
+              Looks up a localized string similar to Expressions arguments:.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.ExpressionQueryTitle">
+            <summary>
+              Looks up a localized string similar to Expression query:.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.FilterComboBoxToolTip">
+            <summary>
+              Looks up a localized string similar to Push for change filter.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.FilterConfiguratorTitle">
+            <summary>
+              Looks up a localized string similar to Filter constructor.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.FiltersListTitle">
+            <summary>
+              Looks up a localized string similar to Filters:.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.FilterTitle">
+            <summary>
+              Looks up a localized string similar to Filter:.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.Greater">
+            <summary>
+              Looks up a localized string similar to GREATER.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.GreaterOrEqual">
+            <summary>
+              Looks up a localized string similar to GREATER OR EQUAL.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.Less">
+            <summary>
+              Looks up a localized string similar to LESS.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.LessOrEqual">
+            <summary>
+              Looks up a localized string similar to LESS OR EQUAL.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.Not">
+            <summary>
+              Looks up a localized string similar to NOT.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.NotEqual">
+            <summary>
+              Looks up a localized string similar to NOT EQUAL.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.Ok">
+            <summary>
+              Looks up a localized string similar to OK.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.Or">
+            <summary>
+              Looks up a localized string similar to OR.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.PushForChangeSorting">
+            <summary>
+              Looks up a localized string similar to [Push for change sorting].
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.RemoveOperandFromExpression">
+            <summary>
+              Looks up a localized string similar to Remove argument from expression.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.SavedFiltersListTitle">
+            <summary>
+              Looks up a localized string similar to Filters list:.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.StartsWith">
+            <summary>
+              Looks up a localized string similar to START WITH.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.ValidationErrorText">
+            <summary>
+              Looks up a localized string similar to Error on field.
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.Localization.LocalizationDictionary.WithoutFilter">
+            <summary>
+              Looks up a localized string similar to (without filter).
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.Localization.LocalizationManager">
+            <summary>
+            Localization manager
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.Localization.LocalizationManager._defaultLocalization">
+            <summary>
+            Default localization
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Localization.LocalizationManager.SetLocalization(System.Resources.ResourceManager)">
+            <summary>
+            Set specify localization
+            </summary>
+            <param name="localization">Specify localization</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.Localization.LocalizationManager.SetDefaultLocalization">
+            <summary>
+            Set default localization
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.Localization.LocalizationManager.GetLocalizedValue(System.String)">
+            <summary>
+            Get localized field value
+            </summary>
+            <param name="fieldName">Field Name</param>
+            <returns>Localized field value</returns>
+        </member>
+        <member name="M:VirtualizationListViewControl.Localization.LocalizationManager.GetFieldNameByLocalizatedValue(System.String)">
+            <summary>
+            Get specify field name by his localized value
+            </summary>
+            <param name="localizedValue">Field's localized value</param>
+            <returns>Filed name</returns>
+        </member>
+        <member name="T:VirtualizationListViewControl.ServerListChangesCallBack.ElementChanging`1">
+            <summary>
+            Element changing at collection
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.ServerListChangesCallBack.ElementChanging`1.Position">
+            <summary>
+            Element position at collection
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.ServerListChangesCallBack.ElementChanging`1.ChangedElement">
+            <summary>
+            Changed element
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.ServerListChangesCallBack.ElementChanging`1.ChangeAction">
+            <summary>
+            Change type
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.ServerListChangesCallBack.ElementChanging`1.#ctor(System.Int32,`0,System.ComponentModel.CollectionChangeAction)">
+            <summary>
+            Constructor for all parameters
+            </summary>
+            <param name="position">Element position at collection</param>
+            <param name="changedElement">Changed element</param>
+            <param name="changeAction">Change type</param>
+        </member>
+        <member name="T:VirtualizationListViewControl.ServerListChangesCallBack.RequestedData`1">
+            <summary>
+            Requested data items range
+            </summary>
+            <typeparam name="T">Data item object</typeparam>
+        </member>
+        <member name="F:VirtualizationListViewControl.ServerListChangesCallBack.RequestedData`1.StartIndex">
+            <summary>
+            Start index of requested range
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.ServerListChangesCallBack.RequestedData`1.RequestedCount">
+            <summary>
+            Requested items count
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.ServerListChangesCallBack.RequestedData`1.RequestedDataList">
+            <summary>
+            Reauested data items
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.ServerListChangesCallBack.RequestedData`1.OverallCount">
+            <summary>
+            Overall items count at list
+            </summary>
+        </member>
+        <member name="F:VirtualizationListViewControl.ServerListChangesCallBack.RequestedData`1.IsPriority">
+            <summary>
+            Indicate when requested data is priority
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.ServerListChangesCallBack.RequestedData`1.#ctor(System.Int32,System.Int32,System.Collections.Generic.IList{`0},System.Int32)">
+            <summary>
+            Constructor for basic parameters
+            </summary>
+            <param name="startIndex">Start index of requested range</param>
+            <param name="requestedCount">Requested items count</param>
+            <param name="requestedDataList">Reauested data items</param>
+            <param name="overallCount">Overall items count at list</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.ServerListChangesCallBack.RequestedData`1.#ctor(System.Int32,System.Int32,System.Collections.Generic.IList{`0},System.Int32,System.Boolean)">
+            <summary>
+            Constructor for all parameters
+            </summary>
+            <param name="startIndex">Start index of requested range</param>
+            <param name="requestedCount">Requested items count</param>
+            <param name="requestedDataList">Reauested data items</param>
+            <param name="overallCount">Overall items count at list</param>
+            <param name="isPriority">Indicate when requested data is priority</param>
+        </member>
+        <member name="T:VirtualizationListViewControl.ServerListChangesCallBack.ServerListChanging`1">
+            <summary>
+            List changing at server associate with ItemsProvider
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.SlaveTypes.FilterableGridViewColumnHeader">
+            <summary>
+            GridView column header with filtration field
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.FilterableGridViewColumnHeader.Filter">
+            <summary>
+            Filtration field
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.SlaveTypes.FilterableGridViewColumnHeader.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.SlaveTypes.FilterablePropertyDescription">
+            <summary>
+            Property description for filtering
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.FilterablePropertyDescription.Title">
+            <summary>
+            Property representation title
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.FilterablePropertyDescription.BoundProperty">
+            <summary>
+            Filterable property description
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.FilterablePropertyDescription.AvailableOperators">
+            <summary>
+            Available comparision operators
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.FilterablePropertyDescription.ValueTemplate">
+            <summary>
+            DataTemplate for generation property value
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.FilterablePropertyDescription.DefaultValue">
+            <summary>
+            Default property value
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.FilterablePropertyDescription.HasAvailableValues">
+            <summary>
+            Indicate when property value is bound available values
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.FilterablePropertyDescription.ValueToStringConverter">
+            <summary>
+            ValueConverter for property value representation
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.SlaveTypes.FilterablePropertyDescription.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.SlaveTypes.FilterablePropertyDescriptionCollection">
+            <summary>
+            List of property descriptions for filtering
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.SlaveTypes.FilterRowContainer">
+            <summary>
+            Container for filterable cell at fast filter row
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.FilterRowContainer.BoundProperty">
+            <summary>
+            Filterable property description
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.FilterRowContainer.ValueTemplate">
+            <summary>
+            DataTemplate for generation property value
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.FilterRowContainer.FilterOperator">
+            <summary>
+            Comparision filtration operator
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.FilterRowContainer.Value">
+            <summary>
+            Property value
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.SlaveTypes.FilterRowContainer.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.SlaveTypes.FilterRowContainer.#ctor(VirtualizationListView.SortAndFilterDTO.FieldDescription,System.Windows.DataTemplate,System.Object,VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.Operators.ComparisonOperators)">
+            <summary>
+            Constructor for all parameters
+            </summary>
+            <param name="boundProperty">Filterable property description</param>
+            <param name="valueTemplate">DataTemplate for generation property value</param>
+            <param name="value">Property value</param>
+            <param name="filterOperator">Comparision filtration operator</param>
+        </member>
+        <member name="M:VirtualizationListViewControl.SlaveTypes.FilterRowContainer.ClearValue(System.Nullable{VirtualizationListView.SortAndFilterDTO.FieldDescription})">
+            <summary>
+            Clear property value
+            </summary>
+            <param name="notClearProperty">Property which not clear fast filter row</param>
+        </member>
+        <member name="F:VirtualizationListViewControl.SlaveTypes.FilterRowContainer.FilterByValue">
+            <summary>
+            Filter by value delegate
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.SlaveTypes.VirtualizationListViewColumn">
+            <summary>
+            Representation column at VirtualizationListView
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.VirtualizationListViewColumn.Header">
+            <summary>
+            Column's header title
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.VirtualizationListViewColumn.ToolTip">
+            <summary>
+            Column's header ToolTip
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.VirtualizationListViewColumn.Width">
+            <summary>
+            Column's width
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.VirtualizationListViewColumn.CellTemplate">
+            <summary>
+            DataTemplate for column's cell at VirtualizationListView
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.VirtualizationListViewColumn.DisabledSorting">
+            <summary>
+            Indicate when sorting is disable
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.VirtualizationListViewColumn.BoundProperty">
+            <summary>
+            Column's cell element property description
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.VirtualizationListViewColumn.FilterValueTemplate">
+            <summary>
+            DataTemplate for fast filter cell
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.VirtualizationListViewColumn.FilterBoundProperty">
+            <summary>
+            Fast filter cell's property description
+            </summary>
+        </member>
+        <member name="P:VirtualizationListViewControl.SlaveTypes.VirtualizationListViewColumn.FilterOperator">
+            <summary>
+            Fast filter comparison operator
+            </summary>
+        </member>
+        <member name="M:VirtualizationListViewControl.SlaveTypes.VirtualizationListViewColumn.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:VirtualizationListViewControl.SlaveTypes.VirtualizationListViewColumnCollection">
+            <summary>
+            List of column's representation at VirtualizationListView
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

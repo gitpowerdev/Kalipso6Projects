@@ -1,0 +1,457 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VirtualizationListView.SortAndFilterDTO</name>
+    </assembly>
+    <members>
+        <member name="T:VirtualizationListView.SortAndFilterDTO.FieldDescription">
+            <summary>
+            Object's field description
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.FieldDescription.Assembly">
+            <summary>
+            Assembly name where define type
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.FieldDescription.DeclaringType">
+            <summary>
+            Type name where declare this field
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.FieldDescription.FieldName">
+            <summary>
+            Field name
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.FieldDescription.NumberStyle">
+            <summary>
+            Numeric data presentation
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.FieldDescription.IsNull">
+            <summary>
+            Is FieldDescription structure Null
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.FieldDescription.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Constructor for basic parameters
+            </summary>
+            <param name="assembly">Assembly name where define type</param>
+            <param name="declaringType">Type name where declare this field</param>
+            <param name="fieldName">Field name</param>
+        </member>
+        <member name="T:VirtualizationListView.SortAndFilterDTO.Filtering.FilterConditionConverter">
+            <summary>
+            Converter filter condition to other formats
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterConditionConverter.GetLinqFilteringConditions(VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement,System.Type,System.Collections.Generic.Dictionary{System.Type,System.Type[]},System.String)">
+            <summary>
+            Get LINQ string from filter expression (IQuaryable)
+            </summary>
+            <param name="filterElement">Filter expression</param>
+            <param name="classType">Object Type for filtering (it contain filtering fields)</param>
+            <param name="knownTypes">Known Types if use polymorphism</param>
+            <param name="preambule">Preambule for LINQ string</param>
+            <returns>Filter expression for LINQ</returns>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterConditionConverter.GetFieldValuesLinq(VirtualizationListView.SortAndFilterDTO.FieldDescription,System.Type,System.Linq.IQueryable)">
+            <summary>
+            Get LINQ expression for field values from objects list
+            </summary>
+            <param name="field">Field description for expression</param>
+            <param name="classType">Object Type for expression (it contain expression field)</param>
+            <param name="list">Objects list</param>
+            <returns>LINQ expression for field values</returns>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterConditionConverter.ComparisonFilterOperatorToLinq(VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.Operators.ComparisonOperators,System.Boolean,System.Boolean)">
+            <summary>
+            Get LINQ comparison operator representation
+            </summary>
+            <param name="operators">Comparison operator</param>
+            <param name="isEnumValue">Indicate when comparison value is enum</param>
+            <param name="isNullValue">Indicate when comparison value is null</param>
+            <returns>LINQ comparison operator representation</returns>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterConditionConverter.BooleanFilterOperatorToLinq(VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.Operators.BooleanOperators)">
+            <summary>
+            Get LINQ boolean operator representation
+            </summary>
+            <param name="operators">Boolean operator</param>
+            <returns>LINQ boolean operator representation</returns>
+        </member>
+        <member name="T:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.BooleanOperatorNode">
+            <summary>
+            Expression tree node with logical operator
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.BooleanOperatorNode.Operator">
+            <summary>
+            Logical operator merge childs
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.BooleanOperatorNode.Validate">
+            <summary>
+            Validate condition
+            </summary>
+            <returns>true - success validation, otherwise - false</returns>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.BooleanOperatorNode.Find(VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement)">
+            <summary>
+            Find element in expression tree
+            </summary>
+            <param name="element">Required element</param>
+            <returns>Required element in expression tree</returns>
+        </member>
+        <member name="T:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ComparisonOperatorNode">
+            <summary>
+            Expression tree node with comparison operator
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ComparisonOperatorNode.Operator">
+            <summary>
+            Comparison operator merge childs
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ComparisonOperatorNode.Validate">
+            <summary>
+            Validate condition
+            </summary>
+            <returns>true - success validation, otherwise - false</returns>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ComparisonOperatorNode.Find(VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement)">
+            <summary>
+            Find element in expression tree
+            </summary>
+            <param name="element">Required element</param>
+            <returns>Required element in expression tree</returns>
+        </member>
+        <member name="T:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeFieldLeaf">
+            <summary>
+            Expression tree leaf contain field name of object for comparison
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeFieldLeaf.Property">
+            <summary>
+            Object's property info
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeFieldLeaf.PropertyDescription">
+            <summary>
+            Property description for serializing data
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeFieldLeaf.Validate">
+            <summary>
+            Validate condition
+            </summary>
+            <returns>true - success validation, otherwise - false</returns>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeFieldLeaf.Find(VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement)">
+            <summary>
+            Find element in expression tree
+            </summary>
+            <param name="element">Required element</param>
+            <returns>Required element in expression tree</returns>
+        </member>
+        <member name="T:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeValueLeaf">
+            <summary>
+            Expression tree leaf with object's value
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeValueLeaf.FieldValue">
+            <summary>
+            Object's value
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeValueLeaf.AvailableValues">
+            <summary>
+            Available values list for object
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeValueLeaf.ErrorResponce">
+            <summary>
+            Error information at entered object value
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeValueLeaf.Validate">
+            <summary>
+            Validate condition
+            </summary>
+            <returns>true - success validation, otherwise - false</returns>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeValueLeaf.Find(VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement)">
+            <summary>
+            Find element in expression tree
+            </summary>
+            <param name="element">Required element</param>
+            <returns>Required element in expression tree</returns>
+        </member>
+        <member name="T:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.Operators.BooleanOperators">
+            <summary>
+            Logical operators
+            </summary>
+        </member>
+        <member name="T:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.Operators.ComparisonOperators">
+            <summary>
+            Comparison operators
+            </summary>
+        </member>
+        <member name="T:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTree">
+            <summary>
+            Describe filter conditions by binary expression tree
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTree.Root">
+            <summary>
+            Expression tree root
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTree.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTree.#ctor(VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.Operators.BooleanOperators,VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement,VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement)">
+            <summary>
+            Constructor with logical expression node
+            </summary>
+            <param name="boolOp">Logical operator</param>
+            <param name="left">Left operand (child)</param>
+            <param name="right">Right operand (child)</param>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTree.#ctor(VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.Operators.BooleanOperators)">
+            <summary>
+            Constructor with logical expression node
+            </summary>
+            <param name="boolOp">Logical operator</param>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTree.#ctor(VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.Operators.ComparisonOperators,VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement,VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement)">
+            <summary>
+            Constructor with comparison expression node
+            </summary>
+            <param name="compOp">Comparison operator</param>
+            <param name="left">Left operand (child)</param>
+            <param name="right">Right operand (child)</param>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTree.#ctor(VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.Operators.ComparisonOperators)">
+            <summary>
+            Constructor with comparison expression node
+            </summary>
+            <param name="compOp">Comparison operator</param>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTree.Validate">
+            <summary>
+            Validate condition
+            </summary>
+            <returns>true - success validation, otherwise - false</returns>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTree.Find(VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement)">
+            <summary>
+            Find element in expression tree
+            </summary>
+            <param name="element">Required element</param>
+            <returns>Required element in expression tree</returns>
+        </member>
+        <member name="T:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement">
+            <summary>
+            Expression tree element
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement.Parent">
+            <summary>
+            Parent element
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement.Validate">
+            <summary>
+            Validate condition
+            </summary>
+            <returns>true - success validation, otherwise - false</returns>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement.Find(VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeElement)">
+            <summary>
+            Find element in expression tree
+            </summary>
+            <param name="element">Required element</param>
+            <returns>Required element in expression tree</returns>
+        </member>
+        <member name="T:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeNode">
+            <summary>
+            Expression tree node
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeNode.Left">
+            <summary>
+            Left child
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTreeNode.Right">
+            <summary>
+            Right child
+            </summary>
+        </member>
+        <member name="T:VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams">
+            <summary>
+            Filtration parameters
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams.Name">
+            <summary>
+            Filter name
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams.Conditions">
+            <summary>
+            Filter conditions
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams.#ctor(VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTree)">
+            <summary>
+            Constructor with filter conditions
+            </summary>
+            <param name="conditions">Filter conditions</param>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams.#ctor(System.String,VirtualizationListView.SortAndFilterDTO.Filtering.FilterExpressions.ExpressionTree)">
+            <summary>
+            Constructor for all parameters
+            </summary>
+            <param name="name">Filter name</param>
+            <param name="conditions">Filter conditions</param>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.FilterParams.ValidateConditions">
+            <summary>
+            Validate desired filter conditions
+            </summary>
+            <returns>true - success validation, otherwise - false</returns>
+        </member>
+        <member name="T:VirtualizationListView.SortAndFilterDTO.Filtering.ValidationResponce">
+            <summary>
+            Validation result and error message
+            </summary>
+        </member>
+        <member name="F:VirtualizationListView.SortAndFilterDTO.Filtering.ValidationResponce.ValidationResult">
+            <summary>
+            Validation result flag
+            </summary>
+        </member>
+        <member name="F:VirtualizationListView.SortAndFilterDTO.Filtering.ValidationResponce.ValidationErrorMessage">
+            <summary>
+            Validation error message if result false
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.ValidationResponce.#ctor">
+            <summary>
+            Success validation constructor
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Filtering.ValidationResponce.#ctor(System.String)">
+            <summary>
+            Failure validation constructor
+            </summary>
+            <param name="validationErrorMessage">Error message</param>
+        </member>
+        <member name="T:VirtualizationListView.SortAndFilterDTO.Filtering.XmlFilterParameters">
+            <summary>
+            XML presentation filtration parameters
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Filtering.XmlFilterParameters.CurrentFilter">
+            <summary>
+            Current filter name
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Filtering.XmlFilterParameters.Filters">
+            <summary>
+            All filters list
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Helpers.ReflectionHelper.GetPropertyPathFromClass(System.String,System.Type,System.Collections.Generic.Dictionary{System.Type,System.Type[]},System.String,System.Boolean@)">
+            <summary>
+            Get property path at specify class
+            </summary>
+            <param name="propertyName">Property name</param>
+            <param name="classType">Class that contain property</param>
+            <param name="knownTypes">Known Types if use polymorphism</param>
+            <param name="preambule">Property path preambule</param>
+            <param name="findSuccess">Indicate when property path found success</param>
+            <returns>Property path</returns>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Helpers.ReflectionHelper.GetPropertyPathFromClass(System.String,System.Type,System.String,System.Boolean@)">
+            <summary>
+            Get property path at specify class
+            </summary>
+            <param name="propertyName">Property name</param>
+            <param name="classType">Class that contain property</param>
+            <param name="preambule">Property path preambule</param>
+            <param name="findSuccess">Indicate when property path found success</param>
+            <returns>Property path</returns>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Helpers.ReflectionHelper.GetPropertyValue(System.Object,System.String)">
+            <summary>
+            Get property value at specify object
+            </summary>
+            <param name="obj">Object that contain property</param>
+            <param name="propertyName">Property name</param>
+            <returns>Property value</returns>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Helpers.ReflectionHelper.IsNullable(System.Type)">
+            <summary>
+            Define Nullable type
+            </summary>
+            <param name="popertyType">Type of object</param>
+            <returns>Indicate when object type is Nullable</returns>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Helpers.ReflectionHelper.GetRealType(System.Type)">
+            <summary>
+            Get type T inside Nullable construction
+            </summary>
+            <param name="properType">Type of object</param>
+            <returns></returns>
+        </member>
+        <member name="T:VirtualizationListView.SortAndFilterDTO.Sorting.SortParams">
+            <summary>
+            Sorting parameters
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Sorting.SortParams.PropertyDescr">
+            <summary>
+            Property description for sorting
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Sorting.SortParams.Property">
+            <summary>
+            Property info for which carry sorting
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Sorting.SortParams.DeclaringPropertyType">
+            <summary>
+            Type's object contain property for which carry sorting
+            </summary>
+        </member>
+        <member name="P:VirtualizationListView.SortAndFilterDTO.Sorting.SortParams.IsAsc">
+            <summary>
+            Sort order
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Sorting.SortParams.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:VirtualizationListView.SortAndFilterDTO.Sorting.SortParams.#ctor(VirtualizationListView.SortAndFilterDTO.FieldDescription,System.Boolean)">
+            <summary>
+            Constructor for all parameters
+            </summary>
+            <param name="propertyDescr">Property description for sorting</param>
+            <param name="isAsc">Sort order</param>
+        </member>
+    </members>
+</doc>
