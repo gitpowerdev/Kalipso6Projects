@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ArrayOfFolder xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Folder>
-    <folder>teste</folder>
-    <Path>C:\Users\AlbertoMoreira\source\Repos\Kalipso Media Explorer\bin\Release\Icons\Personal\teste</Path>
-    <Personal>true</Personal>
-    <Count>0</Count>
-  </Folder>
-</ArrayOfFolder>
