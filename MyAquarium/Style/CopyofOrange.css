@@ -1,23 +1,23 @@
 :root
 {
---header-background-color:#FF546A83;
+--header-background-color:#FFE4A126;
 --header-foreground-color:#FFFFFFFF;
 --header-font-family:OS Default;
 --header-font-size:11;
 --header-icon-color:#FF000000;
---header-height:35;
+--header-height:30;
 --subheader-background-color:#FFFFD64E;
 --subheader-foreground-color:#FF3E3E3E;
 --subheader-icon-color:#FF000000;
 --subheader-font-family:Os Default;
 --subheader-font-size:9;
---subheader-height:30;
---body-background-color:#FFFAFAFA;
---body-foreground-color:#FF000000;
+--subheader-height:24;
+--body-background-color:#FFFFFFFF;
+--body-foreground-color:#FF333333;
 --body-font-family:Arial;
 --body-font-size:9;
 --body-icon-colors:black;
---body-button-background:#FF2C2B27;
+--body-button-background:#FFFFCC33;
 --body-button-foreground:#FFFFFFFF;
 --footer-background-color:#FF494949;
 --footer-foreground-color:#FFFFFFFF;
